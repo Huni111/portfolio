@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunor Nagy</title>
+    <link rel="icon" type="image/x-icon" href="images/icons8-laptop-60.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+    
+
+    <header>
+        <nav class="main_bar navbar navbar-expand-sm ">
+            <div class="container-fluid ">
+                <h2 class="logo-nev  mx-5">
+                    Hunor Nagy
+                </h2>
+                <img src="images/icons8-laptop-60.png">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#carouselExampleFade">About</a>
+                    </li>
+
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item mx-3">
+                        <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="d-flex f-sekson">
+        <div class="main-title d-flex align-items-center justify-items-center mx-auto ms-auto me-5">
+
+            <h1 class="title-white">
+                I'm Hunor, a web developer!
+                <button type="button" class="btn my-4 fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Hire me!</button>
+                <div class="d-flex align-items-center justify-content-left">
+                    <a target="_blank" href="https://www.facebook.com/hunor.nagy.773/"><img
+                            src="images/facebook-sotet.png" alt="Image 1" class="img-fluid img-icon mx-2"></a>
+                    <a href="mailto:huni19966@gmail.com"><img src="images/email-sotet.png" alt="Image 1"
+                            class="img-fluid img-icon mx-2"></a>
+                    <a href="tel:+40746846830"><img src="images/telefon-sotet.png" alt="Image 1"
+                            class="img-fluid img-icon mx-2"></a>
+                </div>
+            </h1>
+        </div>
+
+
+
+        <img src="images/hnagy.jpg"
+            class="profilkep img-fluid me-auto ms-0 mt-5 align-items-center justify-items-center">
+
+            <div class="m-2">
+                <a href=""><img class="flag" src="images/flag.png"></a>
+                <a href=""><img class="flag" src="images/romania.png"></a>
+                <a href=""><img class="flag" src="images/circle.png"></a>
+                
+            </div>
+
+
+    </div>
+
+    <!-- ABOUT ME -->
+
+    <!-- <div class="space-b"></div> -->
+    <div id="carouselExampleFade" class="sekson carousel d-flex flex-column slide" data-bs-ride="carousel"
+        data-bs-pause="hover">
+        <h1 class="szov1 pb-2 d-block">About me</h1>
+        <div class="carousel-inner mx-auto">
+            <div class="carousel-item container-fluid active" data-bs-interval="8000">
+                <div class="car-item d-flex align-items-center ">
+                    <div class="col-7">
+                        <p class="szov2 fst-italic text-end pe-5">Greetings! I'm Hunor Nagy, an aspiring web
+                            developer with a
+                            passion
+                            for crafting digital experiences.
+                            While I may not boast a lengthy professional background, my enthusiasm for learning and
+                            dedication
+                            to mastering the MERN (MongoDB, Express.js, React.js, Node.js) stack have been the driving
+                            forces
+                            behind my journey.</p>
+                    </div>
+                    <div class="col-5">
+                        <img class="about-kep" src="images/about1.jpeg" alt="Image Description">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item container-fluid" data-bs-interval="8000">
+                <div class="car-item d-flex align-items-center ">
+                    <div class="col-7">
+                        <p class="szov2 fst-italic text-end pe-5">My approach to web development is a fusion of
+                            creativity and technical
+                            proficiency. Through
+                            self-directed learning and hands-on projects, I've cultivated skills in building robust
+                            backend
+                            solutions with Node.js and Express.js, as well as creating engaging user interfaces with
+                            React.js.</p>
+                    </div>
+                    <div class="col-5">
+                        <img class="about-kep" src="images/about2.jpeg" alt="Image Description">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item container-fluid " data-bs-interval="8000">
+                <div class="car-item d-flex align-items-center">
+                    <div class="col-7">
+                        <p class="szov2 fst-italic text-end pe-5">Every project in my portfolio is a testament to my
+                            commitment to mastering the art
+                            of web
+                            development. I am excited about the endless possibilities this field offers and am eager to
+                            contribute my skills to innovative and collaborative projects.</p>
+                    </div>
+                    <div class="col-5">
+                        <img class="about-kep" src="images/about3.jpeg" alt="Image Description">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex ">
+            <button class="carousel-control-prev justify-content-start" type="button"
+                data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next justify-content-end" type="button"
+                data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- SKILLS -->
+    <div id="skils" class="sekson-t">
+
+        <div class="container mt-5">
+            <h1 class="title-white text-center mb-5">My skills!</h1>
+
+            <div class="row">
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="images/icons8-html-5.svg" alt="Image 1" class="img-fluid">
+                    <p class="mt-2">HTML 5</p>
+                </div>
+
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="images/icons8-css3.svg" alt="Image 2" class="img-fluid">
+                    <p class="mt-2">CSS 3</p>
+                </div>
+
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="images/icons8-javascript.svg" alt="Image 3" class="img-fluid">
+                    <p class="mt-2">JavaScript</p>
+                </div>
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="images/icons8-nodejs.svg" alt="Image 3" class="img-fluid">
+                    <p class="mt-2">Node JS</p>
+                </div>
+
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="images/icons8-react-native.svg" alt="Image 3" class="img-fluid">
+                    <p class="mt-2">React</p>
+                </div>
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="images/icons8-git.svg" alt="Image 3" class="img-fluid">
+                    <p class="mt-2">Git</p>
+                </div>
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="images/icons8-ejs.svg" alt="Image 3" class="img-fluid">
+                    <p class="mt-2">Ejs</p>
+                </div>
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="images/icons8-mongodb.svg" alt="Image 3" class="img-fluid">
+                    <p class="mt-2">MongoDB</p>
+                </div>
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="images/icons8-bootstrap-96.png" alt="Image 3" class="img-fluid">
+                    <p class="mt-2">Bootstrap</p>
+                </div>
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="images/icons8-express-js-100.png" alt="Image 3" class="img-fluid">
+                    <p class="mt-2">Express</p>
+                </div>
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="images/icons8-jquery-100.png" alt="Image 3" class="img-fluid">
+                    <p class="mt-2">Jquery</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- PROJECTS -->
+    <div id="projects" class="sekson-t">
+        <h1 class="title-white text-center mb-5">Projects</h1>
+
+        <div class="row justify-content-center">
+            <div class="card col-md-3 m-3" style="width: 18rem;">
+                <img src="https://global-uploads.webflow.com/637e14518f6e3b2a5c392294/64402aea1eaae9188d16a1d7_COVER_Screenshot_20221220_041952.webp"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title szov3">Card title</h5>
+                    <p class="card-text szov2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere
+                        ac.
+                    </p>
+                    <a href="#" class="btn gomb btn-primary">Check this out!</a>
+                </div>
+            </div>
+            <div class="card col-md-3 m-3 " style="width: 18rem;">
+                <img src="https://global-uploads.webflow.com/637e14518f6e3b2a5c392294/64402aea1eaae9188d16a1d7_COVER_Screenshot_20221220_041952.webp"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title szov3">Card title</h5>
+                    <p class="card-text szov2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere
+                        ac.
+                    </p>
+                    <a href="#" class="btn gomb btn-primary">Check this out!</a>
+                </div>
+            </div>
+            <div class="card col-md-3 m-3" style="width: 18rem;">
+                <img src="https://global-uploads.webflow.com/637e14518f6e3b2a5c392294/64402aea1eaae9188d16a1d7_COVER_Screenshot_20221220_041952.webp"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title szov3">Card title</h5>
+                    <p class="card-text szov2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere
+                        ac.
+                    </p>
+                    <a href="#" class="btn gomb btn-primary">Check this out!</a>
+                </div>
+            </div>
+            <div class="card col-md-3 m-3" style="width: 18rem;">
+                <img src="https://global-uploads.webflow.com/637e14518f6e3b2a5c392294/64402aea1eaae9188d16a1d7_COVER_Screenshot_20221220_041952.webp"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title szov3">Card title</h5>
+                    <p class="card-text szov2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere
+                        ac.
+                    </p>
+                    <a href="#" class="btn gomb btn-primary">Check this out!</a>
+                </div>
+            </div>
+            <div class="card col-md-3 m-3" style="width: 18rem;">
+                <img src="https://global-uploads.webflow.com/637e14518f6e3b2a5c392294/64402aea1eaae9188d16a1d7_COVER_Screenshot_20221220_041952.webp"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title szov3">Card title</h5>
+                    <p class="card-text szov2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere
+                        ac.
+                    </p>
+                    <a href="#" class="btn gomb btn-primary">Check this out!</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- CONTACTS -->
+    <footer class="szov ">
+
+        <div class="d-flex align-items-center justify-content-center pt-5">
+            <a target="_blank" href="https://www.facebook.com/hunor.nagy.773/"><img src="images/facebook-vilagos.png"
+                    alt="Image 1" class="img-fluid img-icon mx-5"></a>
+            <a href="mailto:huni19966@gmail.com"><img src="images/email-villagos.png" alt="Image 1"
+                    class="img-fluid img-icon mx-5"></a>
+            <a href="tel:+40746846830"><img src="images/telefon-vilagos.png" alt="Image 1"
+                    class="img-fluid img-icon mx-5"></a>
+        </div>
+
+        <div class="d-flex align-items-end justify-content-center copy pb-4">
+            <h4 class="szov3">Copyright © Hunor Nagy </h4> &nbsp;&nbsp;&nbsp;&nbsp;<h4 class="szov3" id="year"></h4>
+        </div>
+
+    </footer>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Contact me by:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h5>tel: +40744846830</h5>
+            <h5>e-mail: huni19966@gmail.com</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="index.js">
+
+    </script>
+</body>
+
+
+</html>

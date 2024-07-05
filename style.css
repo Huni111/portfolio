@@ -1,0 +1,217 @@
+/* HEADER */
+.bar {
+  background-color: #176B87;
+  max-width: 2500px;
+}
+
+.main_bar {
+  background-color: #DAFFFB;
+  max-width: 2500px;
+
+}
+.title-white {
+  color: #04364A;
+  font-size: 2.5vw
+
+}
+.container{
+  width: 100%;
+}
+body {
+  background-color: #DAFFFB;
+  font-family: 'Montserrat', sans-serif;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.logo-nev {
+  color:  #176B87;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vw;
+}
+
+.main-title {
+  height: 80%vh;
+  max-width: 2500px;
+  max-height: 600px
+  
+}
+.flag {
+  width: 1.5rem;
+}
+
+.profilkep {
+  max-width: 22rem;
+  max-height: 22rem;
+  border-radius: 50%;
+  border: solid 0.5rem #176B87;
+  margin: 3rem;
+  margin-bottom: 5rem;
+}
+.nav-item{
+  transition: 500ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  font-size: large;
+}
+
+.nav-item:hover {
+  transition: 500ms;
+  padding: 2px 2px;
+  transform: translateY(-0px);
+  font-size: x-large;
+  
+}
+
+.nav-link:visited {
+  color: #176B87;
+}
+.nav-link {
+  color: #176B87;
+}
+
+.nav-link:hover {
+  color: #176B87;
+}
+
+
+
+.btn {
+
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #04364A;
+  background-color: #adb2b8;
+  padding: 10px 30px;
+  border: solid #264653 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 18px;
+  transition: 500ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+
+  transition: 500ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  background-color: #ffffff00;
+  color:#176B87;
+  border: solid 2px #176B87;
+}
+.space-b{
+  height: 50px;
+}
+.img-icon{
+  max-width: 2rem;
+}
+/* ABOUT-ME */
+
+
+.sekson {
+  word-wrap: break-word;
+  background-color: #176B87;
+  padding: 3rem;
+  min-height: 320px;
+  max-width: 2500px;
+  
+  
+}
+.sekson-t {
+  word-wrap: break-word;
+  padding: 3rem;
+  margin-top: 0;
+  min-height: 300px;
+  max-width: 2500px
+  
+  
+}
+.car-item{
+  min-height: 270px;
+}
+
+.f-sekson {
+  height: 80%vh;
+  max-width: 2500px;
+  max-height: 600px
+}
+.about-kep {
+
+  max-width: 80%;
+  max-height: 270px;
+}
+.szov1 {
+  color: #64CCC5;
+  font-size: 2.5vw
+
+}
+.szov2 {
+  color: #64CCC5;
+  font-size: 1.35vw
+
+}
+.szov3 {
+  color: #64CCC5;
+  font-size: 1.5vw
+
+}
+
+/* PROJECTS */
+
+.card {
+  /* background-color: #DAFFFB; */
+  background-color: #176B87;
+}
+
+.gomb:hover {
+  transition: 500ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  background-color: #ffffff00;
+  color:#64CCC5;
+  border: solid 2px #64CCC5;
+}
+footer {
+  background-color: #176B87;
+  max-width: 2500px;
+}
+.copy {
+  height: 10rem;
+  margin-top: auto;
+}
+/* POPUP */
+
+/* Add this to your existing styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #888;
+  z-index: 1;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+/* Add this to style the close button */
+.popup-content button {
+  background-color: #176B87;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
