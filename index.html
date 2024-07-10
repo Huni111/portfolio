@@ -14,29 +14,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
 
 
-    
+
 
     <header>
         <nav class="main_bar navbar navbar-expand-sm ">
             <div class="container-fluid ">
-                <h2 class="logo-nev  mx-5">
+                <h2 id="logo" class="logo-nev  mx-5">
                     Hunor Nagy
                 </h2>
                 <img src="images/icons8-laptop-60.png">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#carouselExampleFade">About</a>
+                        <a id="about" class="nav-link" href="#carouselExampleFade">About</a>
                     </li>
 
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a id="projects" class="nav-link" href="#projects">Projects</a>
                     </li>
 
                     <li class="nav-item mx-3">
-                        <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link" href="#">Contact</a>
+                        <a id="contact" type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -46,8 +48,9 @@
         <div class="main-title d-flex align-items-center justify-items-center mx-auto ms-auto me-5">
 
             <h1 class="title-white">
-                I'm Hunor, a web developer!
-                <button type="button" class="btn my-4 fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Hire me!</button>
+               <div id="title" >I'm Hunor, a web developer!</div> 
+                <button id="hire_me" type="button" class="btn my-4 fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Hire
+                    me!</button>
                 <div class="d-flex align-items-center justify-content-left">
                     <a target="_blank" href="https://www.facebook.com/hunor.nagy.773/"><img
                             src="images/facebook-sotet.png" alt="Image 1" class="img-fluid img-icon mx-2"></a>
@@ -64,12 +67,12 @@
         <img src="images/hnagy.jpg"
             class="profilkep img-fluid me-auto ms-0 mt-5 align-items-center justify-items-center">
 
-            <div class="m-2">
-                <a href=""><img class="flag" src="images/flag.png"></a>
-                <a href=""><img class="flag" src="images/romania.png"></a>
-                <a href=""><img class="flag" src="images/circle.png"></a>
-                
-            </div>
+        <div class="m-2">
+            <img id="language-button-en" class="flag" src="images/flag.png">
+            <img id="language-button-ro" class="flag" src="images/romania.png">
+            <img id="language-button-hu" class="flag" src="images/circle.png">
+
+        </div>
 
 
     </div>
@@ -79,12 +82,12 @@
     <!-- <div class="space-b"></div> -->
     <div id="carouselExampleFade" class="sekson carousel d-flex flex-column slide" data-bs-ride="carousel"
         data-bs-pause="hover">
-        <h1 class="szov1 pb-2 d-block">About me</h1>
+        <h1 id="about_me" class="szov1 pb-2 d-block">About me</h1>
         <div class="carousel-inner mx-auto">
             <div class="carousel-item container-fluid active" data-bs-interval="8000">
                 <div class="car-item d-flex align-items-center ">
                     <div class="col-7">
-                        <p class="szov2 fst-italic text-end pe-5">Greetings! I'm Hunor Nagy, an aspiring web
+                        <p id="greeting" class="szov2 fst-italic text-end pe-5">Greetings! I'm Hunor Nagy, an aspiring web
                             developer with a
                             passion
                             for crafting digital experiences.
@@ -102,7 +105,7 @@
             <div class="carousel-item container-fluid" data-bs-interval="8000">
                 <div class="car-item d-flex align-items-center ">
                     <div class="col-7">
-                        <p class="szov2 fst-italic text-end pe-5">My approach to web development is a fusion of
+                        <p id="aproach" class="szov2 fst-italic text-end pe-5">My approach to web development is a fusion of
                             creativity and technical
                             proficiency. Through
                             self-directed learning and hands-on projects, I've cultivated skills in building robust
@@ -118,7 +121,7 @@
             <div class="carousel-item container-fluid " data-bs-interval="8000">
                 <div class="car-item d-flex align-items-center">
                     <div class="col-7">
-                        <p class="szov2 fst-italic text-end pe-5">Every project in my portfolio is a testament to my
+                        <p id="commitment" class="szov2 fst-italic text-end pe-5">Every project in my portfolio is a testament to my
                             commitment to mastering the art
                             of web
                             development. I am excited about the endless possibilities this field offers and am eager to
@@ -150,7 +153,7 @@
     <div id="skils" class="sekson-t">
 
         <div class="container mt-5">
-            <h1 class="title-white text-center mb-5">My skills!</h1>
+            <h1 id="skills" class="title-white text-center mb-5">My skills!</h1>
 
             <div class="row">
                 <div class="col-md-3 mb-4 text-center">
@@ -206,74 +209,24 @@
 
     </div>
     <!-- PROJECTS -->
-    <div id="projects" class="sekson-t">
-        <h1 class="title-white text-center mb-5">Projects</h1>
+    <div  class="sekson-t">
+        <h1 id="projektek"  class="title-white text-center mb-5">Projects</h1>
 
         <div class="row justify-content-center">
             <div class="card col-md-3 m-3" style="width: 18rem;">
-                <img src="https://global-uploads.webflow.com/637e14518f6e3b2a5c392294/64402aea1eaae9188d16a1d7_COVER_Screenshot_20221220_041952.webp"
+                <img src="https://i.ibb.co/72w1DfS/Screenshot-from-2024-07-08-00-57-47.png"
                     class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title szov3">Card title</h5>
-                    <p class="card-text szov2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere
-                        ac.
-                    </p>
-                    <a href="#" class="btn gomb btn-primary">Check this out!</a>
+                    <h5 class="card-title szov3">Cook-Book</h5>
+                    <p id="cook_book" class="card-text szov2"> (you may need to wait a minute at loading as the server has a spin down after not being used) Welcome to Cook-Cook, the ultimate cookbook web app! Discover, share, and savor delicious recipes from around the world. Whether you're a seasoned chef or a home cook, Cook-Cook connects you with a community of food enthusiasts eager to inspire your next culinary adventure.
+                    <a href="#" class="btn gomb btn-primary">Visit!</a>
                 </div>
             </div>
-            <div class="card col-md-3 m-3 " style="width: 18rem;">
-                <img src="https://global-uploads.webflow.com/637e14518f6e3b2a5c392294/64402aea1eaae9188d16a1d7_COVER_Screenshot_20221220_041952.webp"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title szov3">Card title</h5>
-                    <p class="card-text szov2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere
-                        ac.
-                    </p>
-                    <a href="#" class="btn gomb btn-primary">Check this out!</a>
-                </div>
-            </div>
-            <div class="card col-md-3 m-3" style="width: 18rem;">
-                <img src="https://global-uploads.webflow.com/637e14518f6e3b2a5c392294/64402aea1eaae9188d16a1d7_COVER_Screenshot_20221220_041952.webp"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title szov3">Card title</h5>
-                    <p class="card-text szov2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere
-                        ac.
-                    </p>
-                    <a href="#" class="btn gomb btn-primary">Check this out!</a>
-                </div>
-            </div>
-            <div class="card col-md-3 m-3" style="width: 18rem;">
-                <img src="https://global-uploads.webflow.com/637e14518f6e3b2a5c392294/64402aea1eaae9188d16a1d7_COVER_Screenshot_20221220_041952.webp"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title szov3">Card title</h5>
-                    <p class="card-text szov2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere
-                        ac.
-                    </p>
-                    <a href="#" class="btn gomb btn-primary">Check this out!</a>
-                </div>
-            </div>
-            <div class="card col-md-3 m-3" style="width: 18rem;">
-                <img src="https://global-uploads.webflow.com/637e14518f6e3b2a5c392294/64402aea1eaae9188d16a1d7_COVER_Screenshot_20221220_041952.webp"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title szov3">Card title</h5>
-                    <p class="card-text szov2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere
-                        ac.
-                    </p>
-                    <a href="#" class="btn gomb btn-primary">Check this out!</a>
-                </div>
+           
+            
+           
+                    
+          
             </div>
         </div>
 
@@ -296,32 +249,33 @@
 
     </footer>
 
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Contact me by:</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contact me by:</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>tel: +40744846830</h5>
+                    <h5>e-mail: huni19966@gmail.com</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-            <h5>tel: +40744846830</h5>
-            <h5>e-mail: huni19966@gmail.com</h5>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
-  </div>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="index.js">
+    <script src="index.js"></script>
+    <script type="module" src="i18n.js"></script>
 
     </script>
 </body>

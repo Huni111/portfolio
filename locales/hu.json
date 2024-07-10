@@ -1,0 +1,25 @@
+{
+    
+      "common": {
+        "title": "Hunor vagyok egy webfejlesztő!",
+        "about_me": "Rólam",
+        "about":"Rólam",
+        "projects": "Projektek",
+        "contact": "Kapacsolat",
+        "contact_by":"Keress meg!",
+        "close": "Bezár",
+        "hire_me": "Kapcsolat",
+        "copyright": "Copyright © Hunor Nagy"
+      },
+      "about": {
+        "greeting": "Üdvözlet! Nagy Hunor vagyok, egy lelkes webfejlesztő, aki szenvedéllyel készít digitális élményeket. Bár nem dicsekedhetek hosszú szakmai háttérrel, a tanulás iránti lelkesedésem és elkötelezettségem a MERN (MongoDB, Express.js, React.js, Node.js) stack elsajátítására vezérelte az utamat.",
+        "approach": "A webfejlesztéshez való hozzáállásom a kreativitás és a technikai szakértelem ötvözete. Az önálló tanulás és gyakorlati projektek révén robusztus backend megoldásokat építettem Node.js és Express.js segítségével, valamint vonzó felhasználói felületeket hoztam létre React.js használatával.",
+        "commitment": "Portfólióm minden projektje tanúsítja elkötelezettségemet a webfejlesztés művészetének elsajátítása iránt. Izgatottan várom a végtelen lehetőségeket, amelyeket ez a terület kínál, és alig várom, hogy hozzájáruljak képességeimmel az innovatív és együttműködő projektekhez."
+      },
+      "skills": {
+        "title": "Készségek!"
+      },
+      "logo":"Nagy Hunor",
+      "cook_book": "Üdvözöljük a Cook-Cook-on, az ultimate szakácskönyv webalkalmazásban! Fedezze fel, ossza meg és élvezze a finom recepteket a világ minden tájáról. Akár tapasztalt séf, akár otthoni szakács vagy, a Cook-Cook összeköti Önt egy olyan közösséggel, amely arra vágyik, hogy inspirálja Önt a következő kulináris kalandjára."
+    
+}

@@ -1,0 +1,24 @@
+{
+    "common": {
+        "title": "I'm Hunor, a web developer!",
+        "about_me": "About me",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "contact_by": "Contact me by:",
+        "close": "Close",
+        "hire_me": "Hire me!",
+        "copyright": "Copyright © Hunor Nagy"
+    },
+    "about": {
+        "greeting": "Greetings! I'm Hunor Nagy, an aspiring web developer with a passion for crafting digital experiences. While I may not boast a lengthy professional background, my enthusiasm for learning and dedication to mastering the MERN (MongoDB, Express.js, React.js, Node.js) stack have been the driving forces behind my journey.",
+        "approach": "My approach to web development is a fusion of creativity and technical proficiency. Through self-directed learning and hands-on projects, I've cultivated skills in building robust backend solutions with Node.js and Express.js, as well as creating engaging user interfaces with React.js.",
+        "commitment": "Every project in my portfolio is a testament to my commitment to mastering the art of web development. I am excited about the endless possibilities this field offers and am eager to contribute my skills to innovative and collaborative projects."
+    },
+    "skills": {
+        "title": "My skills!"
+    },
+    "logo": "Hunor Nagy",
+    "cook_book": "Welcome to Cook-Cook, the ultimate cookbook web app! Discover, share, and savor delicious recipes from around the world. Whether you're a seasoned chef or a home cook, Cook-Cook connects you with a community of food enthusiasts eager to inspire your next culinary adventure."
+
+}

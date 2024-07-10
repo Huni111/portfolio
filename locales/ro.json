@@ -1,0 +1,26 @@
+{
+    
+    "common": {
+      "title": "Sunt Hunor un dezvoltator web!",
+      "about_me": "Despre mine",
+      "about":"Despre mine",
+      "projects": "Proiecte",
+      "contact": "Contact",
+      "contact_by":"Contactează-mă!",
+      "close": "Închide",
+      "hire_me": "Angajează-mă!",
+      "copyright": "Copyright © Hunor Nagy"
+    },
+    "about": {
+      "greeting": "Salutări! Sunt Hunor Nagy, un dezvoltator web aspirant cu o pasiune pentru crearea de experiențe digitale. Deși nu mă pot lăuda cu o experiență profesională îndelungată, entuziasmul meu pentru învățare și dedicarea pentru a stăpâni stack-ul MERN (MongoDB, Express.js, React.js, Node.js) au fost forțele motrice din spatele călătoriei mele.",
+      "approach": "Abordarea mea în dezvoltarea web este o fuziune de creativitate și competență tehnică. Prin învățare autodidactă și proiecte practice, am cultivat abilități în construirea de soluții backend robuste cu Node.js și Express.js, precum și în crearea de interfețe utilizator atractive cu React.js.",
+      "commitment": "Fiecare proiect din portofoliul meu este o mărturie a angajamentului meu de a stăpâni arta dezvoltării web. Sunt încântat de posibilitățile nelimitate pe care le oferă acest domeniu și sunt dornic să contribui cu abilitățile mele la proiecte inovatoare și colaborative."
+    },
+    "skills": {
+      "title": "Abilitățile!"
+    },
+    "logo":"Hunor Nagy",
+    "cook_book":"Bun venit la Cook-Cook, aplicația web de rețete supremă! Descoperă, împărtășește și savurează rețete delicioase din întreaga lume. Fie că ești un bucătar experimentat sau un bucătar amator, Cook-Cook te conectează cu o comunitate de entuziaști ai gastronomiei, dornici să îți inspire următoarea aventură culinară."
+
+  
+}
