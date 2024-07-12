@@ -9,6 +9,10 @@
   max-width: 2500px;
 
 }
+
+.drop_down_menu{
+  display: none;
+}
 .title-white {
   color: #04364A;
   font-size: 2.5vw
@@ -48,6 +52,10 @@ body {
   margin: 3rem;
   margin-bottom: 5rem;
 }
+
+.profilkep_elott{
+  display: none;
+}
 .nav-item{
   transition: 500ms;
   transform: translateY(0);
@@ -77,6 +85,9 @@ body {
   color: #176B87;
 }
 
+.icon{
+  display: none;
+}
 
 
 .btn {
@@ -136,12 +147,17 @@ body {
 }
 .car-item{
   min-height: 270px;
+  display: flex;
 }
 
 .f-sekson {
   height: 80%vh;
   max-width: 2500px;
-  max-height: 600px
+  max-height: 600px;
+  display: flex;
+}
+.laptop{
+  display: none;
 }
 .about-kep {
 
@@ -155,7 +171,8 @@ body {
 }
 .szov2 {
   color: #64CCC5;
-  font-size: 1.35vw
+  font-size: 1.35vw;
+  text-align: left;
 
 }
 .szov3 {
@@ -215,3 +232,186 @@ footer {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 650px) {
+
+  .menu_list {
+    display: none;
+  }
+
+  .flags {
+    display: none;
+  }
+
+  #logo {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+
+  .logo_photo {
+    width: 2rem;
+  }
+
+  #title {
+    font-size: medium;
+  }
+  .laptop{
+    display: inline;
+  }
+  .logo_photo{
+    display: none;
+  }
+  
+  .title-white {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+
+  .profilkep{
+    display: none;
+  }
+
+  .profilkep_elott{
+    display: block;
+    width: 12rem;
+    margin-bottom: 1rem;
+  }
+  .main-title{
+    flex-direction: column;
+    align-content: center;
+    padding: 2rem;
+  }
+ .navbar{
+    flex-wrap: nowrap;
+  }
+
+  /* .sekson{
+    min-width: 300px;
+  } */
+  .f-sekson{
+    /* justify-content: center;
+    align-content: center; */
+  }
+
+  .icon{
+    display: inline;
+    width: 2rem;
+    margin: 0;
+  }
+
+  .szov2{
+    font-size: 1rem;
+    min-width: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .szov3{
+    font-size: 1rem;
+    min-width: 5rem;
+    padding: 1rem;
+  }
+
+  #about_me{
+    font-size: large;
+    min-width: 5rem;
+  }
+  #skills{
+    font-size: large;
+    min-width: 5rem;
+    margin: auto;
+   
+
+
+  }
+  #projektek{
+    font-size: large;
+   
+  }
+
+  .about-kep{
+    min-width: 12rem;
+  }
+
+  .szoveg_div{
+    padding: 0.5rem;
+  }
+
+
+  .car-item {
+    flex-direction: column;
+
+  }
+
+  .carousel-item{
+    flex-wrap: nowrap;
+  }
+
+  .skill_icon{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    min-width: 2rem;
+    max-width: 4rem;
+    margin: auto;
+    padding: auto;
+
+  }
+  .skill_name{
+    font-size: 0.8rem;
+  }
+
+  .footer_icon{
+    margin: 0.5rem;
+    padding: 0%;
+  }
+  .card_body{
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .drop_down_menu{
+    background-color:#176B87;
+    padding: 1rem;
+    padding-left: 0%;
+    display: none;
+    text-align: left;
+  }
+
+  .drop_down_menu li{
+    list-style: none;
+    margin: 1rem;
+    margin-left: 0.5;
+    color: #64CCC5;
+    display: flex;
+  }
+  .drop_down_menu li img{
+    margin: 0.5rem;
+    width: 2rem;
+  }
+
+  .drop_down_menu li a{
+    text-decoration: none;
+  }
+
+
+  .icon{
+    font-size: 2rem;
+    
+  }
+
+  .drop_down_menu li:hover, .drop_down_menu li:active{
+    background-color: #64CCC5;
+    color: #176B87;
+  }
+
+
+  .sekson-t{
+    padding: 1.5rem;
+  }
+
+ 
+}

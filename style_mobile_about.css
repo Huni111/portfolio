@@ -1,0 +1,29 @@
+.sekson_mobil{
+    background-color: #176B87;
+    margin: 0% !important;
+    width: 100vw;
+    padding: 1rem;
+
+}
+
+.about_title{
+    color: #64CCC5;
+    margin-top: 1rem;
+}
+
+.szoveg_div{
+    display: block;
+    color: #64CCC5;
+}
+
+.about-kep{
+    display: block;
+    width: 25rem;
+    text-align: center;
+    margin: auto;
+}
+.szoveg_mobil{
+    font-size: 1rem;
+    margin-top: 1rem;
+    min-width: 15rem;
+}

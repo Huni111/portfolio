@@ -22,9 +22,9 @@ document.getElementById('about_me').innerHTML = i18n.t('common.about_me')
 
 function updateContent() {
     $('#logo').html(i18n.t('logo'));
-    $('#about').html(i18n.t('common.about'));
-    $('#projects').html(i18n.t('common.projects'));
-    $('#contact').html(i18n.t('common.contact'));
+    $('.about').html(i18n.t('common.about'));
+    $('.projects').html(i18n.t('common.projects'));
+    $('.contact').html(i18n.t('common.contact'));
     $('#about_me').html(i18n.t('common.about_me'));
     $('#hire_me').html(i18n.t('common.hire_me'));
     $('#title').html(i18n.t('common.title'));
@@ -38,23 +38,78 @@ function updateContent() {
 
 
 
-    
+
 
 
 }
 
-function updateLang (lang) {
-   
-  i18n.changeLanguage(lang);
-  updateContent();
+function updateLang(lang) {
+
+    i18n.changeLanguage(lang);
+    updateContent();
 }
 
-const enButton = document.getElementById('language-button-en');
-const roButton = document.getElementById('language-button-ro');
-const huButton = document.getElementById('language-button-hu');
 
 
 
-enButton.addEventListener('click', () =>  updateLang('en'));
-roButton.addEventListener('click', () =>  updateLang('ro'));
-huButton.addEventListener('click', () =>  updateLang('hu'));
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var enButtonMob = document.getElementById("mob-language-button-en");
+    var roButtonMob = document.getElementById("mob-language-button-ro");
+    var huButtonMob = document.getElementById("mob-language-button-hu");
+
+    if (enButtonMob) {
+        enButtonMob.addEventListener("click", function() {
+            updateLang('en')
+        });
+    } else {
+        console.error("Element with ID 'language-button-en' not found");
+    }
+
+    if (roButtonMob) {
+        roButtonMob.addEventListener("click", function() {
+            updateLang('ro')
+        });
+    } else {
+        console.error("Element with ID 'language-button-ro' not found");
+    }
+
+    if (huButtonMob) {
+        huButtonMob.addEventListener("click", function() {
+            updateLang('hu')
+        });
+    } else {
+        console.error("Element with ID 'language-button-hu' not found");
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var enButton = document.getElementById("language-button-en");
+    var roButton = document.getElementById("language-button-ro");
+    var huButton = document.getElementById("language-button-hu");
+
+    if (enButton) {
+        enButton.addEventListener("click", function() {
+            updateLang('en')
+        });
+    } else {
+        console.error("Element with ID 'language-button-en' not found");
+    }
+
+    if (roButton) {
+        roButton.addEventListener("click", function() {
+            updateLang('ro')
+        });
+    } else {
+        console.error("Element with ID 'language-button-ro' not found");
+    }
+
+    if (huButton) {
+        huButton.addEventListener("click", function() {
+            updateLang('hu')
+        });
+    } else {
+        console.error("Element with ID 'language-button-hu' not found");
+    }
+});

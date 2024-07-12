@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_mobile_about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
@@ -24,30 +26,51 @@
         <nav class="main_bar navbar navbar-expand-sm ">
             <div class="container-fluid ">
                 <h2 id="logo" class="logo-nev  mx-5">
-                    Hunor Nagy
+                    Hunor Nagy <p class="laptop">💻</p>
                 </h2>
-                <img src="images/icons8-laptop-60.png">
-                <ul class="navbar-nav ms-auto">
+                <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                <img class="logo_photo" src="images/icons8-laptop-60.png">
+                <ul class="menu_list navbar-nav ms-auto">
                     <li class="nav-item mx-3">
-                        <a id="about" class="nav-link" href="#carouselExampleFade">About</a>
+                        <a id="about" class="about nav-link" href="#about_me">About</a>
                     </li>
 
                     <li class="nav-item mx-3">
-                        <a id="projects" class="nav-link" href="#projects">Projects</a>
+                        <a id="projects" class="projects nav-link" href="#projektek">Projects</a>
                     </li>
 
                     <li class="nav-item mx-3">
-                        <a id="contact" type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        <a id="contact" type="button" class="contact nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="d-flex f-sekson">
+
+    
+    <!-- Drop down menu! -->
+     <div class="drop_down_menu">
+        <ul>
+            <li class="about"><a href="about_me">About</a></li></a>
+            <li class="projects"><a href="#projektek">Projects</a></li>
+            <li class="contact"><a  data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a></li>
+            <li>
+                <img id="mob-language-button-en" class="flag" src="images/flag.png">
+                <img id="mob-language-button-ro" class="flag" src="images/romania.png">
+                <img id="mob-language-button-hu" class="flag" src="images/circle.png">
+            </li>
+        </ul>
+     </div>
+    <div class="profile_section  f-sekson">
         <div class="main-title d-flex align-items-center justify-items-center mx-auto ms-auto me-5">
 
-            <h1 class="title-white">
+            <img src="images/hnagy.jpg"
+            class="profilkep_elott profilkep img-fluid mx-auto mt-5 align-items-center justify-items-center">
+
+            <h1 class="title-white mx-auto">
                <div id="title" >I'm Hunor, a web developer!</div> 
                 <button id="hire_me" type="button" class="btn my-4 fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Hire
                     me!</button>
@@ -67,7 +90,7 @@
         <img src="images/hnagy.jpg"
             class="profilkep img-fluid me-auto ms-0 mt-5 align-items-center justify-items-center">
 
-        <div class="m-2">
+        <div class="flags m-2">
             <img id="language-button-en" class="flag" src="images/flag.png">
             <img id="language-button-ro" class="flag" src="images/romania.png">
             <img id="language-button-hu" class="flag" src="images/circle.png">
@@ -77,16 +100,16 @@
 
     </div>
 
-    <!-- ABOUT ME -->
+    <!-- ABOUT ME carousel-->
 
     <!-- <div class="space-b"></div> -->
-    <div id="carouselExampleFade" class="sekson carousel d-flex flex-column slide" data-bs-ride="carousel"
+    <div id="carouselExampleFade" class="sekson carousel d-none d-md-flex flex-column slide" data-bs-ride="carousel"
         data-bs-pause="hover">
         <h1 id="about_me" class="szov1 pb-2 d-block">About me</h1>
         <div class="carousel-inner mx-auto">
             <div class="carousel-item container-fluid active" data-bs-interval="8000">
                 <div class="car-item d-flex align-items-center ">
-                    <div class="col-7">
+                    <div class="szoveg_div col-7">
                         <p id="greeting" class="szov2 fst-italic text-end pe-5">Greetings! I'm Hunor Nagy, an aspiring web
                             developer with a
                             passion
@@ -103,9 +126,9 @@
                 </div>
             </div>
             <div class="carousel-item container-fluid" data-bs-interval="8000">
-                <div class="car-item d-flex align-items-center ">
+                <div class="car-item align-items-center ">
                     <div class="col-7">
-                        <p id="aproach" class="szov2 fst-italic text-end pe-5">My approach to web development is a fusion of
+                        <p id="aproach" class="fst-italic text-end pe-5 szov2">My approach to web development is a fusion of
                             creativity and technical
                             proficiency. Through
                             self-directed learning and hands-on projects, I've cultivated skills in building robust
@@ -134,12 +157,12 @@
             </div>
         </div>
         <div class="d-flex ">
-            <button class="carousel-control-prev justify-content-start" type="button"
+            <button class="c-buttons carousel-control-prev justify-content-start" type="button"
                 data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next justify-content-end" type="button"
+            <button class="c-buttons carousel-control-next justify-content-end" type="button"
                 data-bs-target="#carouselExampleFade" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -147,6 +170,55 @@
         </div>
     </div>
 
+    <!-- ABOUT ME MOBIL -->
+
+    <div class="sekson_mobil pe-3 d-md-none">
+        <h1 class="about_title">About me</h1>
+
+        <div class="szoveg_div">
+            <p id="greeting" class="szoveg_mobil fst-italic text-start pe-5">Greetings! I'm Hunor Nagy, an aspiring web
+                developer with a
+                passion
+                for crafting digital experiences.
+                While I may not boast a lengthy professional background, my enthusiasm for learning and
+                dedication
+                to mastering the MERN (MongoDB, Express.js, React.js, Node.js) stack have been the driving
+                forces
+                behind my journey.</p>
+        </div>
+        <div class="">
+            <img class="about-kep" src="images/about1.jpeg" alt="Image Description">
+        </div>
+        <div class="szoveg_div">
+            <p id="greeting" class="szoveg_mobil fst-italic text-start pe-5">My approach to web development is a fusion
+                of
+                creativity and technical
+                proficiency. Through
+                self-directed learning and hands-on projects, I've cultivated skills in building robust
+                backend
+                solutions with Node.js and Express.js, as well as creating engaging user interfaces with
+                React.js.</p>
+
+        </div>
+
+        <div class="">
+            <img class="about-kep" src="images/about2.jpeg" alt="Image Description">
+        </div>
+
+        <div class="szoveg_div">
+            <p id="aproach" class="szoveg_mobil fst-italic text-start pe-5 w-vw-90">My approach to web development is a
+                fusion of
+                creativity and technical
+                proficiency. Through
+                self-directed learning and hands-on projects, I've cultivated skills in building robust
+                backend
+                solutions with Node.js and Express.js, as well as creating engaging user interfaces with
+                React.js.</p>
+        </div>
+        <div class="">
+            <img class="about-kep mx-auto" src="images/about3.jpeg" alt="Image Description">
+        </div>
+    </div>
 
 
     <!-- SKILLS -->
@@ -156,52 +228,52 @@
             <h1 id="skills" class="title-white text-center mb-5">My skills!</h1>
 
             <div class="row">
-                <div class="col-md-3 mb-4 text-center">
+                <div class="skill_icon col-sm-6 col-md-3 mb-4 text-center">
                     <img src="images/icons8-html-5.svg" alt="Image 1" class="img-fluid">
-                    <p class="mt-2">HTML 5</p>
+                    <p class="skill_name mt-2">HTML 5</p>
                 </div>
 
-                <div class="col-md-3 mb-4 text-center">
+                <div class="skill_icon col-sm-6 col-md-3 mb-4 text-center">
                     <img src="images/icons8-css3.svg" alt="Image 2" class="img-fluid">
-                    <p class="mt-2">CSS 3</p>
+                    <p class="skill_name mt-2">CSS 3</p>
                 </div>
 
-                <div class="col-md-3 mb-4 text-center">
+                <div class="skill_icon col-sm-6 col-md-3 mb-4 text-center">
                     <img src="images/icons8-javascript.svg" alt="Image 3" class="img-fluid">
-                    <p class="mt-2">JavaScript</p>
+                    <p class="skill_name mt-2 fs-sm-5">JavaScript</p>
                 </div>
-                <div class="col-md-3 mb-4 text-center">
+                <div class="skill_icon col-sm-6 col-md-3 mb-4 text-center">
                     <img src="images/icons8-nodejs.svg" alt="Image 3" class="img-fluid">
-                    <p class="mt-2">Node JS</p>
+                    <p class="skill_name mt-2">Node JS</p>
                 </div>
 
-                <div class="col-md-3 mb-4 text-center">
+                <div class="skill_icon col-sm-6 col-md-3 mb-4 text-center">
                     <img src="images/icons8-react-native.svg" alt="Image 3" class="img-fluid">
-                    <p class="mt-2">React</p>
+                    <p class="skill_name mt-2">React</p>
                 </div>
-                <div class="col-md-3 mb-4 text-center">
+                <div class="skill_icon col-sm-6 col-md-3 mb-4 text-center">
                     <img src="images/icons8-git.svg" alt="Image 3" class="img-fluid">
-                    <p class="mt-2">Git</p>
+                    <p class="skill_name mt-2">Git</p>
                 </div>
-                <div class="col-md-3 mb-4 text-center">
+                <div class="skill_icon col-sm-6 col-md-3 mb-4 text-center">
                     <img src="images/icons8-ejs.svg" alt="Image 3" class="img-fluid">
-                    <p class="mt-2">Ejs</p>
+                    <p class="skill_name mt-2">Ejs</p>
                 </div>
-                <div class="col-md-3 mb-4 text-center">
+                <div class="skill_icon col-sm-6 col-md-3 mb-4 text-center">
                     <img src="images/icons8-mongodb.svg" alt="Image 3" class="img-fluid">
-                    <p class="mt-2">MongoDB</p>
+                    <p class="skill_name mt-2">MongoDB</p>
                 </div>
-                <div class="col-md-3 mb-4 text-center">
+                <div class="skill_icon col-sm-6 col-md-3 mb-4 text-center">
                     <img src="images/icons8-bootstrap-96.png" alt="Image 3" class="img-fluid">
-                    <p class="mt-2">Bootstrap</p>
+                    <p class="skill_name mt-2">Bootstrap</p>
                 </div>
-                <div class="col-md-3 mb-4 text-center">
+                <div class="skill_icon col-sm-6 col-md-3 mb-4 text-center">
                     <img src="images/icons8-express-js-100.png" alt="Image 3" class="img-fluid">
-                    <p class="mt-2">Express</p>
+                    <p class="skill_name mt-2">Express</p>
                 </div>
-                <div class="col-md-3 mb-4 text-center">
+                <div class="skill_icon col-sm-6 col-md-3 mb-4 text-center">
                     <img src="images/icons8-jquery-100.png" alt="Image 3" class="img-fluid">
-                    <p class="mt-2">Jquery</p>
+                    <p class="skill_name mt-2">Jquery</p>
                 </div>
 
             </div>
@@ -218,7 +290,7 @@
                     class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title szov3">Cook-Book</h5>
-                    <p id="cook_book" class="card-text szov2"> (you may need to wait a minute at loading as the server has a spin down after not being used) Welcome to Cook-Cook, the ultimate cookbook web app! Discover, share, and savor delicious recipes from around the world. Whether you're a seasoned chef or a home cook, Cook-Cook connects you with a community of food enthusiasts eager to inspire your next culinary adventure.
+                    <p id="cook_book" class="card-text szov2"> (you may need to wait a minute at loading as the server has a spin down after not being used) Welcome to Cook-Cook, the ultimate cookbook web app! Discover, share, and savor delicious recipes from around the world. Whether you're a seasoned chef or a home cook, Cook-Cook connects you with a community of food enthusiasts eager to inspire your next culinary adventure.</p>
                     <a href="#" class="btn gomb btn-primary">Visit!</a>
                 </div>
             </div>
@@ -236,11 +308,11 @@
 
         <div class="d-flex align-items-center justify-content-center pt-5">
             <a target="_blank" href="https://www.facebook.com/hunor.nagy.773/"><img src="images/facebook-vilagos.png"
-                    alt="Image 1" class="img-fluid img-icon mx-5"></a>
+                    alt="Image 1" class="footer_icon img-fluid img-icon mx-md-5"></a>
             <a href="mailto:huni19966@gmail.com"><img src="images/email-villagos.png" alt="Image 1"
-                    class="img-fluid img-icon mx-5"></a>
+                    class="footer_icon img-fluid img-icon mx-md-5"></a>
             <a href="tel:+40746846830"><img src="images/telefon-vilagos.png" alt="Image 1"
-                    class="img-fluid img-icon mx-5"></a>
+                    class="footer_icon img-fluid img-icon mx-md-5"></a>
         </div>
 
         <div class="d-flex align-items-end justify-content-center copy pb-4">
@@ -261,6 +333,12 @@
                 <div class="modal-body">
                     <h5>tel: +40744846830</h5>
                     <h5>e-mail: huni19966@gmail.com</h5>
+                    <a href="./download/download.txt" download="valam_szoveg">
+                        <button type="button" class="btn">Download Resume</button>
+                    </a>
+                    <a href="./download/download.txt" download="valam_szoveg">
+                        <button type="button" class="btn">Descară CV</button>
+                    </a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -275,6 +353,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script src="drop_down.js"></script>
     <script type="module" src="i18n.js"></script>
 
     </script>
