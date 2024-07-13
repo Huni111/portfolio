@@ -1,15 +1,10 @@
-function dropDown() {
-    var elements = document.getElementsByClassName("drop_down_menu");
-    if (elements.length === 0) {
-        console.error("No elements found with class 'drop_down_menu'");
-        return;
-    }
-    
-    var dropdownMenu = elements[0]; 
+const toggleButton = $(".icon");
+const droppDown = $(".drop_down_menu")
 
-    if (dropdownMenu.style.display === "block") {
-        dropdownMenu.style.display = "none";
-    } else {
-        dropdownMenu.style.display = "block";
+toggleButton.on("click", ()=>{
+    if(droppDown.css('display') === "none"){
+        droppDown.css('display', "block");
+    }else{
+        droppDown.css('display', "none");
     }
-}
+})

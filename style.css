@@ -402,7 +402,7 @@ footer {
 
   .icon{
     font-size: 2rem;
-    
+    cursor: pointer;
   }
 
   .drop_down_menu li:hover, .drop_down_menu li:active{
