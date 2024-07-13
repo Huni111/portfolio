@@ -5,7 +5,7 @@ function dropDown() {
         return;
     }
     
-    var dropdownMenu = elements[0]; // Assuming you want to toggle the first element with the class "drop_down_menu"
+    var dropdownMenu = elements[0]; 
 
     if (dropdownMenu.style.display === "block") {
         dropdownMenu.style.display = "none";
