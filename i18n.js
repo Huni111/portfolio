@@ -34,6 +34,12 @@ function updateContent() {
     $('#projektek').html(i18n.t('common.projects'));
     $('#skills').html(i18n.t('skills.title'));
     $('#cook_book').html(i18n.t('cook_book'));
+    $('#greeting_mobil').html(i18n.t('about.greeting'));
+    $('#approach_mobil').html(i18n.t('about.approach'));
+    $('#commitment_mobil').html(i18n.t('about.commitment'));
+
+
+
 
 
 
