@@ -37,6 +37,8 @@ function updateContent() {
     $('#greeting_mobil').html(i18n.t('about.greeting'));
     $('#approach_mobil').html(i18n.t('about.approach'));
     $('#commitment_mobil').html(i18n.t('about.commitment'));
+    $('#wedding').html(i18n.t('wedding'));
+
 
 
 
